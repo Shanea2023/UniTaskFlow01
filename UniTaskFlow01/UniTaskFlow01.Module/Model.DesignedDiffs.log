@@ -1,0 +1,524 @@
+25.03.26 10:11:07.365	================================================================================
+The error occurred:
+
+	Type:       ObjectCreatingException
+	Message:    Unable to create an instance of the "UniTaskFlow01.Module.UniTaskFlow01Module" type.
+Reason: "An error with number 1008 has occurred.
+Error message: the 'DevExpress.ExpressApp.Validation.ValidationModule' type is not descendant of 'DevExpress.ExpressApp.ModuleBase' (Parameter 'item')"
+	Data:       0 entries
+	Stack trace:
+
+   at DevExpress.ExpressApp.Utils.Reflection.TypeData.CreateInstance(Object[] args)
+   at DevExpress.ExpressApp.Utils.Reflection.TypeHelper.CreateInstance(Type type, Object[] args)
+   at DevExpress.Persistent.Base.ReflectionHelper.CreateObject(Type objectType, Object[] args)
+   at DevExpress.ExpressApp.Design.ModelEditor.ModelLoader.LoadModel(ITypeDiscoveryService typeDiscoveryService, String targetDiffFileName, IDisposable& obj, ILogger logger)
+   at DevExpress.ExpressApp.Design.ModelEditor.ModelEditorFormController.CreateModelEditorController()
+   at DevExpress.ExpressApp.Design.ModelEditor.ModelEditorFormController.Init()
+   at DevExpress.ExpressApp.Design.ModelEditorServer.ServerHost.CreateNewModelEditor(String fileName, ModelEditorInfo meInfo, String projectUniqueName, Dictionary`2 settings, String frameworkVersion)
+   at DevExpress.ExpressApp.Design.ModelEditorServer.ServerHost.<>c__DisplayClass66_0.<OpenModelEditor>b__1()
+   at DevExpress.ExpressApp.Design.ModelEditorServer.UiRunner.<>c__DisplayClass3_0.<RunOnUIThreadCore>b__0(Object _)
+	----------------
+	InnerException:
+
+			Type:       ArgumentException
+			Message:    An error with number 1008 has occurred.
+Error message: the 'DevExpress.ExpressApp.Validation.ValidationModule' type is not descendant of 'DevExpress.ExpressApp.ModuleBase' (Parameter 'item')
+			Data:       0 entries
+			Stack trace:
+
+   at DevExpress.ExpressApp.Utils.Guard.TypeArgumentIs(Type expectedType, Type passedType, String argumentName)
+   at DevExpress.ExpressApp.ModuleTypeList.AddCore(Type item)
+   at DevExpress.ExpressApp.TypeCollection.Add(Type item)
+   at UniTaskFlow01.Module.UniTaskFlow01Module..ctor()
+   at Create_UniTaskFlow01Module()
+   at DevExpress.ExpressApp.Utils.Reflection.TypeData.CreateInstance(Object[] args)
+			InnerException is null
+
+--------------------------------------------------------------------------------
+Loaded assemblies
+	Accessibility, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\Accessibility.dll
+	Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	DevExpress.Data.Desktop.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Data.Desktop.v25.2.dll
+	DevExpress.Data.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Data.v25.2.dll
+	DevExpress.Drawing.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Drawing.v25.2.dll
+	DevExpress.ExpressApp.ConditionalAppearance.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Offline Packages\devexpress.expressapp.conditionalappearance\25.2.3\lib\net8.0\DevExpress.ExpressApp.ConditionalAppearance.v25.2.dll
+	DevExpress.ExpressApp.Design.ModelEditor.Protocol.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Design.ModelEditor.Protocol.v25.2.dll
+	DevExpress.ExpressApp.Design.ModelEditorServer.NetCore.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Design.ModelEditorServer.NetCore.v25.2.dll
+	DevExpress.ExpressApp.Security.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Security.v25.2.dll
+	DevExpress.ExpressApp.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.v25.2.dll
+	DevExpress.ExpressApp.v25.2, Version=25.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Users\DELL\.nuget\packages\devexpress.expressapp\25.2.5\lib\net8.0\DevExpress.ExpressApp.v25.2.dll
+	DevExpress.ExpressApp.Validation.v25.2, Version=25.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Users\DELL\.nuget\packages\devexpress.expressapp.validation\25.2.5\lib\net8.0\DevExpress.ExpressApp.Validation.v25.2.dll
+	DevExpress.ExpressApp.Win.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Win.v25.2.dll
+	DevExpress.Persistent.Base.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Persistent.Base.v25.2.dll
+	DevExpress.Persistent.BaseImpl.EFCore.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Offline Packages\devexpress.persistent.baseimpl.efcore\25.2.3\lib\net8.0\DevExpress.Persistent.BaseImpl.EFCore.v25.2.dll
+	DevExpress.Utils.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Utils.v25.2.dll
+	Microsoft.EntityFrameworkCore, Version=8.0.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, Location=C:\Users\DELL\.nuget\packages\microsoft.entityframeworkcore\8.0.18\lib\net8.0\Microsoft.EntityFrameworkCore.dll
+	Microsoft.VisualStudio.Threading, Version=17.13.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Microsoft.VisualStudio.Threading.dll
+	Microsoft.VisualStudio.Validation, Version=17.8.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Microsoft.VisualStudio.Validation.dll
+	Microsoft.Win32.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\Microsoft.Win32.Primitives.dll
+	Microsoft.Win32.Registry, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\Microsoft.Win32.Registry.dll
+	Microsoft.Win32.SystemEvents, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\Microsoft.Win32.SystemEvents.dll
+	Nerdbank.Streams, Version=2.12.0.0, Culture=neutral, PublicKeyToken=cac503e1823ce71c, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Nerdbank.Streams.dll
+	netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\netstandard.dll
+	Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Newtonsoft.Json.dll
+	ProxyBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	rpcProxies_da4c84a0-7a70-42a6-b84f-c2adf510f261, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	StreamJsonRpc, Version=2.22.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\StreamJsonRpc.dll
+	System.Collections, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.dll
+	System.Collections.Concurrent, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.Concurrent.dll
+	System.Collections.Immutable, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.Immutable.dll
+	System.Collections.NonGeneric, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.NonGeneric.dll
+	System.Collections.Specialized, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.Specialized.dll
+	System.ComponentModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.dll
+	System.ComponentModel.EventBasedAsync, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.EventBasedAsync.dll
+	System.ComponentModel.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.Primitives.dll
+	System.ComponentModel.TypeConverter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.TypeConverter.dll
+	System.Configuration.ConfigurationManager, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Configuration.ConfigurationManager.dll
+	System.Data.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Data.Common.dll
+	System.Diagnostics.DiagnosticSource, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.DiagnosticSource.dll
+	System.Diagnostics.Process, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.Process.dll
+	System.Diagnostics.StackTrace, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.StackTrace.dll
+	System.Diagnostics.TextWriterTraceListener, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.TextWriterTraceListener.dll
+	System.Diagnostics.TraceSource, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.TraceSource.dll
+	System.Diagnostics.Tracing, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.Tracing.dll
+	System.Drawing.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Drawing.Common.dll
+	System.Drawing.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Drawing.Primitives.dll
+	System.IO.Compression, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.IO.Compression.dll
+	System.IO.Pipelines, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.IO.Pipelines.dll
+	System.IO.Pipes, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.IO.Pipes.dll
+	System.Linq, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Linq.dll
+	System.Linq.Expressions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Linq.Expressions.dll
+	System.Memory, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Memory.dll
+	System.Net.Http, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.Http.dll
+	System.Net.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.Primitives.dll
+	System.Net.Security, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.Security.dll
+	System.Net.WebClient, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.WebClient.dll
+	System.Numerics.Vectors, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Numerics.Vectors.dll
+	System.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ObjectModel.dll
+	System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Private.CoreLib.dll
+	System.Private.Uri, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Private.Uri.dll
+	System.Private.Windows.Core, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Private.Windows.Core.dll
+	System.Private.Windows.GdiPlus, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Private.Windows.GdiPlus.dll
+	System.Private.Xml, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Private.Xml.dll
+	System.Reflection.DispatchProxy, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.DispatchProxy.dll
+	System.Reflection.Emit, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Emit.dll
+	System.Reflection.Emit.ILGeneration, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Emit.ILGeneration.dll
+	System.Reflection.Emit.Lightweight, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Emit.Lightweight.dll
+	System.Reflection.Metadata, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Metadata.dll
+	System.Reflection.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Primitives.dll
+	System.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.dll
+	System.Runtime.InteropServices, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.InteropServices.dll
+	System.Runtime.Loader, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Loader.dll
+	System.Runtime.Numerics, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Numerics.dll
+	System.Runtime.Serialization.Formatters, Version=8.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Serialization.Formatters.dll
+	System.Runtime.Serialization.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Serialization.Primitives.dll
+	System.Security.AccessControl, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Security.AccessControl.dll
+	System.Security.Cryptography, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Security.Cryptography.dll
+	System.Security.Principal.Windows, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Security.Principal.Windows.dll
+	System.Text.Encoding.Extensions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Text.Encoding.Extensions.dll
+	System.Text.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Text.Json.dll
+	System.Text.RegularExpressions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Text.RegularExpressions.dll
+	System.Threading, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.dll
+	System.Threading.Overlapped, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.Overlapped.dll
+	System.Threading.Thread, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.Thread.dll
+	System.Threading.ThreadPool, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.ThreadPool.dll
+	System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Web.dll
+	System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Windows.Forms.dll
+	System.Windows.Forms.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Windows.Forms.Primitives.dll
+	System.Xml.ReaderWriter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Xml.ReaderWriter.dll
+	UniTaskFlow01.Module, Version=1.0.9576.18409, Culture=neutral, PublicKeyToken=null, Location=C:\Users\DELL\AppData\Local\Temp\XAF\k3400wiy.kxf\UniTaskFlow01.Module.dll
+================================================================================
+
+25.03.26 10:11:27.151	================================================================================
+The error occurred:
+
+	Type:       ObjectCreatingException
+	Message:    Unable to create an instance of the "UniTaskFlow01.Module.UniTaskFlow01Module" type.
+Reason: "An error with number 1008 has occurred.
+Error message: the 'DevExpress.ExpressApp.Validation.ValidationModule' type is not descendant of 'DevExpress.ExpressApp.ModuleBase' (Parameter 'item')"
+	Data:       0 entries
+	Stack trace:
+
+   at DevExpress.ExpressApp.Utils.Reflection.TypeData.CreateInstance(Object[] args)
+   at DevExpress.ExpressApp.Utils.Reflection.TypeHelper.CreateInstance(Type type, Object[] args)
+   at DevExpress.Persistent.Base.ReflectionHelper.CreateObject(Type objectType, Object[] args)
+   at DevExpress.ExpressApp.Design.ModelEditor.ModelLoader.LoadModel(ITypeDiscoveryService typeDiscoveryService, String targetDiffFileName, IDisposable& obj, ILogger logger)
+   at DevExpress.ExpressApp.Design.ModelEditor.ModelEditorFormController.CreateModelEditorController()
+   at DevExpress.ExpressApp.Design.ModelEditor.ModelEditorFormController.Init()
+   at DevExpress.ExpressApp.Design.ModelEditorServer.ServerHost.CreateNewModelEditor(String fileName, ModelEditorInfo meInfo, String projectUniqueName, Dictionary`2 settings, String frameworkVersion)
+   at DevExpress.ExpressApp.Design.ModelEditorServer.ServerHost.<>c__DisplayClass66_0.<OpenModelEditor>b__1()
+   at DevExpress.ExpressApp.Design.ModelEditorServer.UiRunner.<>c__DisplayClass3_0.<RunOnUIThreadCore>b__0(Object _)
+	----------------
+	InnerException:
+
+			Type:       ArgumentException
+			Message:    An error with number 1008 has occurred.
+Error message: the 'DevExpress.ExpressApp.Validation.ValidationModule' type is not descendant of 'DevExpress.ExpressApp.ModuleBase' (Parameter 'item')
+			Data:       0 entries
+			Stack trace:
+
+   at DevExpress.ExpressApp.Utils.Guard.TypeArgumentIs(Type expectedType, Type passedType, String argumentName)
+   at DevExpress.ExpressApp.ModuleTypeList.AddCore(Type item)
+   at DevExpress.ExpressApp.TypeCollection.Add(Type item)
+   at UniTaskFlow01.Module.UniTaskFlow01Module..ctor()
+   at Create_UniTaskFlow01Module()
+   at DevExpress.ExpressApp.Utils.Reflection.TypeData.CreateInstance(Object[] args)
+			InnerException is null
+
+--------------------------------------------------------------------------------
+Loaded assemblies
+	Accessibility, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\Accessibility.dll
+	Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	DevExpress.Data.Desktop.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Data.Desktop.v25.2.dll
+	DevExpress.Data.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Data.v25.2.dll
+	DevExpress.Drawing.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Drawing.v25.2.dll
+	DevExpress.ExpressApp.ConditionalAppearance.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Offline Packages\devexpress.expressapp.conditionalappearance\25.2.3\lib\net8.0\DevExpress.ExpressApp.ConditionalAppearance.v25.2.dll
+	DevExpress.ExpressApp.Design.ModelEditor.Protocol.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Design.ModelEditor.Protocol.v25.2.dll
+	DevExpress.ExpressApp.Design.ModelEditorServer.NetCore.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Design.ModelEditorServer.NetCore.v25.2.dll
+	DevExpress.ExpressApp.Security.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Security.v25.2.dll
+	DevExpress.ExpressApp.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.v25.2.dll
+	DevExpress.ExpressApp.v25.2, Version=25.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Users\DELL\.nuget\packages\devexpress.expressapp\25.2.5\lib\net8.0\DevExpress.ExpressApp.v25.2.dll
+	DevExpress.ExpressApp.Validation.v25.2, Version=25.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Users\DELL\.nuget\packages\devexpress.expressapp.validation\25.2.5\lib\net8.0\DevExpress.ExpressApp.Validation.v25.2.dll
+	DevExpress.ExpressApp.Win.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Win.v25.2.dll
+	DevExpress.Persistent.Base.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Persistent.Base.v25.2.dll
+	DevExpress.Persistent.BaseImpl.EFCore.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Offline Packages\devexpress.persistent.baseimpl.efcore\25.2.3\lib\net8.0\DevExpress.Persistent.BaseImpl.EFCore.v25.2.dll
+	DevExpress.Utils.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Utils.v25.2.dll
+	Microsoft.EntityFrameworkCore, Version=8.0.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, Location=C:\Users\DELL\.nuget\packages\microsoft.entityframeworkcore\8.0.18\lib\net8.0\Microsoft.EntityFrameworkCore.dll
+	Microsoft.VisualStudio.Threading, Version=17.13.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Microsoft.VisualStudio.Threading.dll
+	Microsoft.VisualStudio.Validation, Version=17.8.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Microsoft.VisualStudio.Validation.dll
+	Microsoft.Win32.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\Microsoft.Win32.Primitives.dll
+	Microsoft.Win32.Registry, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\Microsoft.Win32.Registry.dll
+	Microsoft.Win32.SystemEvents, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\Microsoft.Win32.SystemEvents.dll
+	Nerdbank.Streams, Version=2.12.0.0, Culture=neutral, PublicKeyToken=cac503e1823ce71c, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Nerdbank.Streams.dll
+	netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\netstandard.dll
+	Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Newtonsoft.Json.dll
+	ProxyBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	rpcProxies_da4c84a0-7a70-42a6-b84f-c2adf510f261, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	StreamJsonRpc, Version=2.22.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\StreamJsonRpc.dll
+	System.Collections, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.dll
+	System.Collections.Concurrent, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.Concurrent.dll
+	System.Collections.Immutable, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.Immutable.dll
+	System.Collections.NonGeneric, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.NonGeneric.dll
+	System.Collections.Specialized, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.Specialized.dll
+	System.ComponentModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.dll
+	System.ComponentModel.EventBasedAsync, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.EventBasedAsync.dll
+	System.ComponentModel.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.Primitives.dll
+	System.ComponentModel.TypeConverter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.TypeConverter.dll
+	System.Configuration.ConfigurationManager, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Configuration.ConfigurationManager.dll
+	System.Data.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Data.Common.dll
+	System.Diagnostics.DiagnosticSource, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.DiagnosticSource.dll
+	System.Diagnostics.Process, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.Process.dll
+	System.Diagnostics.StackTrace, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.StackTrace.dll
+	System.Diagnostics.TextWriterTraceListener, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.TextWriterTraceListener.dll
+	System.Diagnostics.TraceSource, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.TraceSource.dll
+	System.Diagnostics.Tracing, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.Tracing.dll
+	System.Drawing.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Drawing.Common.dll
+	System.Drawing.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Drawing.Primitives.dll
+	System.IO.Compression, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.IO.Compression.dll
+	System.IO.Pipelines, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.IO.Pipelines.dll
+	System.IO.Pipes, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.IO.Pipes.dll
+	System.Linq, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Linq.dll
+	System.Linq.Expressions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Linq.Expressions.dll
+	System.Memory, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Memory.dll
+	System.Net.Http, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.Http.dll
+	System.Net.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.Primitives.dll
+	System.Net.Security, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.Security.dll
+	System.Net.WebClient, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.WebClient.dll
+	System.Numerics.Vectors, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Numerics.Vectors.dll
+	System.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ObjectModel.dll
+	System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Private.CoreLib.dll
+	System.Private.Uri, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Private.Uri.dll
+	System.Private.Windows.Core, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Private.Windows.Core.dll
+	System.Private.Windows.GdiPlus, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Private.Windows.GdiPlus.dll
+	System.Private.Xml, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Private.Xml.dll
+	System.Reflection.DispatchProxy, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.DispatchProxy.dll
+	System.Reflection.Emit, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Emit.dll
+	System.Reflection.Emit.ILGeneration, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Emit.ILGeneration.dll
+	System.Reflection.Emit.Lightweight, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Emit.Lightweight.dll
+	System.Reflection.Metadata, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Metadata.dll
+	System.Reflection.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Primitives.dll
+	System.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.dll
+	System.Runtime.InteropServices, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.InteropServices.dll
+	System.Runtime.Loader, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Loader.dll
+	System.Runtime.Numerics, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Numerics.dll
+	System.Runtime.Serialization.Formatters, Version=8.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Serialization.Formatters.dll
+	System.Runtime.Serialization.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Serialization.Primitives.dll
+	System.Security.AccessControl, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Security.AccessControl.dll
+	System.Security.Cryptography, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Security.Cryptography.dll
+	System.Security.Principal.Windows, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Security.Principal.Windows.dll
+	System.Text.Encoding.Extensions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Text.Encoding.Extensions.dll
+	System.Text.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Text.Json.dll
+	System.Text.RegularExpressions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Text.RegularExpressions.dll
+	System.Threading, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.dll
+	System.Threading.Overlapped, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.Overlapped.dll
+	System.Threading.Thread, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.Thread.dll
+	System.Threading.ThreadPool, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.ThreadPool.dll
+	System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Web.dll
+	System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Windows.Forms.dll
+	System.Windows.Forms.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Windows.Forms.Primitives.dll
+	System.Xml.ReaderWriter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Xml.ReaderWriter.dll
+	UniTaskFlow01.Module, Version=1.0.9576.18409, Culture=neutral, PublicKeyToken=null, Location=C:\Users\DELL\AppData\Local\Temp\XAF\k3400wiy.kxf\UniTaskFlow01.Module.dll
+================================================================================
+
+25.03.26 10:17:31.974	================================================================================
+The error occurred:
+
+	Type:       ObjectCreatingException
+	Message:    Unable to create an instance of the "UniTaskFlow01.Module.UniTaskFlow01Module" type.
+Reason: "An error with number 1008 has occurred.
+Error message: the 'DevExpress.ExpressApp.Validation.ValidationModule' type is not descendant of 'DevExpress.ExpressApp.ModuleBase' (Parameter 'item')"
+	Data:       0 entries
+	Stack trace:
+
+   at DevExpress.ExpressApp.Utils.Reflection.TypeData.CreateInstance(Object[] args)
+   at DevExpress.ExpressApp.Utils.Reflection.TypeHelper.CreateInstance(Type type, Object[] args)
+   at DevExpress.Persistent.Base.ReflectionHelper.CreateObject(Type objectType, Object[] args)
+   at DevExpress.ExpressApp.Design.ModelEditor.ModelLoader.LoadModel(ITypeDiscoveryService typeDiscoveryService, String targetDiffFileName, IDisposable& obj, ILogger logger)
+   at DevExpress.ExpressApp.Design.ModelEditor.ModelEditorFormController.CreateModelEditorController()
+   at DevExpress.ExpressApp.Design.ModelEditor.ModelEditorFormController.Init()
+   at DevExpress.ExpressApp.Design.ModelEditorServer.ServerHost.CreateNewModelEditor(String fileName, ModelEditorInfo meInfo, String projectUniqueName, Dictionary`2 settings, String frameworkVersion)
+   at DevExpress.ExpressApp.Design.ModelEditorServer.ServerHost.<>c__DisplayClass66_0.<OpenModelEditor>b__1()
+   at DevExpress.ExpressApp.Design.ModelEditorServer.UiRunner.<>c__DisplayClass3_0.<RunOnUIThreadCore>b__0(Object _)
+	----------------
+	InnerException:
+
+			Type:       ArgumentException
+			Message:    An error with number 1008 has occurred.
+Error message: the 'DevExpress.ExpressApp.Validation.ValidationModule' type is not descendant of 'DevExpress.ExpressApp.ModuleBase' (Parameter 'item')
+			Data:       0 entries
+			Stack trace:
+
+   at DevExpress.ExpressApp.Utils.Guard.TypeArgumentIs(Type expectedType, Type passedType, String argumentName)
+   at DevExpress.ExpressApp.ModuleTypeList.AddCore(Type item)
+   at DevExpress.ExpressApp.TypeCollection.Add(Type item)
+   at UniTaskFlow01.Module.UniTaskFlow01Module..ctor()
+   at Create_UniTaskFlow01Module()
+   at DevExpress.ExpressApp.Utils.Reflection.TypeData.CreateInstance(Object[] args)
+			InnerException is null
+
+--------------------------------------------------------------------------------
+Loaded assemblies
+	Accessibility, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\Accessibility.dll
+	Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	DevExpress.Data.Desktop.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Data.Desktop.v25.2.dll
+	DevExpress.Data.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Data.v25.2.dll
+	DevExpress.Drawing.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Drawing.v25.2.dll
+	DevExpress.ExpressApp.ConditionalAppearance.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Offline Packages\devexpress.expressapp.conditionalappearance\25.2.3\lib\net8.0\DevExpress.ExpressApp.ConditionalAppearance.v25.2.dll
+	DevExpress.ExpressApp.Design.ModelEditor.Protocol.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Design.ModelEditor.Protocol.v25.2.dll
+	DevExpress.ExpressApp.Design.ModelEditorServer.NetCore.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Design.ModelEditorServer.NetCore.v25.2.dll
+	DevExpress.ExpressApp.Security.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Security.v25.2.dll
+	DevExpress.ExpressApp.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.v25.2.dll
+	DevExpress.ExpressApp.v25.2, Version=25.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Users\DELL\.nuget\packages\devexpress.expressapp\25.2.5\lib\net8.0\DevExpress.ExpressApp.v25.2.dll
+	DevExpress.ExpressApp.Validation.v25.2, Version=25.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Users\DELL\.nuget\packages\devexpress.expressapp.validation\25.2.5\lib\net8.0\DevExpress.ExpressApp.Validation.v25.2.dll
+	DevExpress.ExpressApp.Win.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Win.v25.2.dll
+	DevExpress.Persistent.Base.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Persistent.Base.v25.2.dll
+	DevExpress.Persistent.BaseImpl.EFCore.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Offline Packages\devexpress.persistent.baseimpl.efcore\25.2.3\lib\net8.0\DevExpress.Persistent.BaseImpl.EFCore.v25.2.dll
+	DevExpress.Utils.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Utils.v25.2.dll
+	Microsoft.EntityFrameworkCore, Version=8.0.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, Location=C:\Users\DELL\.nuget\packages\microsoft.entityframeworkcore\8.0.18\lib\net8.0\Microsoft.EntityFrameworkCore.dll
+	Microsoft.VisualStudio.Threading, Version=17.13.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Microsoft.VisualStudio.Threading.dll
+	Microsoft.VisualStudio.Validation, Version=17.8.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Microsoft.VisualStudio.Validation.dll
+	Microsoft.Win32.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\Microsoft.Win32.Primitives.dll
+	Microsoft.Win32.Registry, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\Microsoft.Win32.Registry.dll
+	Microsoft.Win32.SystemEvents, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\Microsoft.Win32.SystemEvents.dll
+	Nerdbank.Streams, Version=2.12.0.0, Culture=neutral, PublicKeyToken=cac503e1823ce71c, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Nerdbank.Streams.dll
+	netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\netstandard.dll
+	Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Newtonsoft.Json.dll
+	ProxyBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	rpcProxies_da4c84a0-7a70-42a6-b84f-c2adf510f261, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	StreamJsonRpc, Version=2.22.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\StreamJsonRpc.dll
+	System.Collections, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.dll
+	System.Collections.Concurrent, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.Concurrent.dll
+	System.Collections.Immutable, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.Immutable.dll
+	System.Collections.NonGeneric, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.NonGeneric.dll
+	System.Collections.Specialized, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.Specialized.dll
+	System.ComponentModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.dll
+	System.ComponentModel.EventBasedAsync, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.EventBasedAsync.dll
+	System.ComponentModel.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.Primitives.dll
+	System.ComponentModel.TypeConverter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.TypeConverter.dll
+	System.Configuration.ConfigurationManager, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Configuration.ConfigurationManager.dll
+	System.Data.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Data.Common.dll
+	System.Diagnostics.DiagnosticSource, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.DiagnosticSource.dll
+	System.Diagnostics.Process, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.Process.dll
+	System.Diagnostics.StackTrace, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.StackTrace.dll
+	System.Diagnostics.TextWriterTraceListener, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.TextWriterTraceListener.dll
+	System.Diagnostics.TraceSource, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.TraceSource.dll
+	System.Diagnostics.Tracing, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.Tracing.dll
+	System.Drawing.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Drawing.Common.dll
+	System.Drawing.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Drawing.Primitives.dll
+	System.IO.Compression, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.IO.Compression.dll
+	System.IO.Pipelines, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.IO.Pipelines.dll
+	System.IO.Pipes, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.IO.Pipes.dll
+	System.Linq, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Linq.dll
+	System.Linq.Expressions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Linq.Expressions.dll
+	System.Memory, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Memory.dll
+	System.Net.Http, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.Http.dll
+	System.Net.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.Primitives.dll
+	System.Net.Security, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.Security.dll
+	System.Net.WebClient, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.WebClient.dll
+	System.Numerics.Vectors, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Numerics.Vectors.dll
+	System.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ObjectModel.dll
+	System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Private.CoreLib.dll
+	System.Private.Uri, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Private.Uri.dll
+	System.Private.Windows.Core, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Private.Windows.Core.dll
+	System.Private.Windows.GdiPlus, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Private.Windows.GdiPlus.dll
+	System.Private.Xml, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Private.Xml.dll
+	System.Reflection.DispatchProxy, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.DispatchProxy.dll
+	System.Reflection.Emit, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Emit.dll
+	System.Reflection.Emit.ILGeneration, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Emit.ILGeneration.dll
+	System.Reflection.Emit.Lightweight, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Emit.Lightweight.dll
+	System.Reflection.Metadata, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Metadata.dll
+	System.Reflection.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Primitives.dll
+	System.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.dll
+	System.Runtime.InteropServices, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.InteropServices.dll
+	System.Runtime.Loader, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Loader.dll
+	System.Runtime.Numerics, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Numerics.dll
+	System.Runtime.Serialization.Formatters, Version=8.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Serialization.Formatters.dll
+	System.Runtime.Serialization.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Serialization.Primitives.dll
+	System.Security.AccessControl, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Security.AccessControl.dll
+	System.Security.Cryptography, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Security.Cryptography.dll
+	System.Security.Principal.Windows, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Security.Principal.Windows.dll
+	System.Text.Encoding.Extensions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Text.Encoding.Extensions.dll
+	System.Text.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Text.Json.dll
+	System.Text.RegularExpressions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Text.RegularExpressions.dll
+	System.Threading, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.dll
+	System.Threading.Overlapped, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.Overlapped.dll
+	System.Threading.Thread, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.Thread.dll
+	System.Threading.ThreadPool, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.ThreadPool.dll
+	System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Web.dll
+	System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Windows.Forms.dll
+	System.Windows.Forms.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Windows.Forms.Primitives.dll
+	System.Xml.ReaderWriter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Xml.ReaderWriter.dll
+	UniTaskFlow01.Module, Version=1.0.9576.18409, Culture=neutral, PublicKeyToken=null, Location=C:\Users\DELL\AppData\Local\Temp\XAF\k3400wiy.kxf\UniTaskFlow01.Module.dll
+================================================================================
+
+25.03.26 10:18:06.110	================================================================================
+The error occurred:
+
+	Type:       ObjectCreatingException
+	Message:    Unable to create an instance of the "UniTaskFlow01.Module.UniTaskFlow01Module" type.
+Reason: "An error with number 1008 has occurred.
+Error message: the 'DevExpress.ExpressApp.Validation.ValidationModule' type is not descendant of 'DevExpress.ExpressApp.ModuleBase' (Parameter 'item')"
+	Data:       0 entries
+	Stack trace:
+
+   at DevExpress.ExpressApp.Utils.Reflection.TypeData.CreateInstance(Object[] args)
+   at DevExpress.ExpressApp.Utils.Reflection.TypeHelper.CreateInstance(Type type, Object[] args)
+   at DevExpress.Persistent.Base.ReflectionHelper.CreateObject(Type objectType, Object[] args)
+   at DevExpress.ExpressApp.Design.ModelEditor.ModelLoader.LoadModel(ITypeDiscoveryService typeDiscoveryService, String targetDiffFileName, IDisposable& obj, ILogger logger)
+   at DevExpress.ExpressApp.Design.ModelEditor.ModelEditorFormController.CreateModelEditorController()
+   at DevExpress.ExpressApp.Design.ModelEditor.ModelEditorFormController.Init()
+   at DevExpress.ExpressApp.Design.ModelEditorServer.ServerHost.CreateNewModelEditor(String fileName, ModelEditorInfo meInfo, String projectUniqueName, Dictionary`2 settings, String frameworkVersion)
+   at DevExpress.ExpressApp.Design.ModelEditorServer.ServerHost.<>c__DisplayClass66_0.<OpenModelEditor>b__1()
+   at DevExpress.ExpressApp.Design.ModelEditorServer.UiRunner.<>c__DisplayClass3_0.<RunOnUIThreadCore>b__0(Object _)
+	----------------
+	InnerException:
+
+			Type:       ArgumentException
+			Message:    An error with number 1008 has occurred.
+Error message: the 'DevExpress.ExpressApp.Validation.ValidationModule' type is not descendant of 'DevExpress.ExpressApp.ModuleBase' (Parameter 'item')
+			Data:       0 entries
+			Stack trace:
+
+   at DevExpress.ExpressApp.Utils.Guard.TypeArgumentIs(Type expectedType, Type passedType, String argumentName)
+   at DevExpress.ExpressApp.ModuleTypeList.AddCore(Type item)
+   at DevExpress.ExpressApp.TypeCollection.Add(Type item)
+   at UniTaskFlow01.Module.UniTaskFlow01Module..ctor()
+   at Create_UniTaskFlow01Module()
+   at DevExpress.ExpressApp.Utils.Reflection.TypeData.CreateInstance(Object[] args)
+			InnerException is null
+
+--------------------------------------------------------------------------------
+Loaded assemblies
+	Accessibility, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\Accessibility.dll
+	Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	DevExpress.Data.Desktop.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Data.Desktop.v25.2.dll
+	DevExpress.Data.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Data.v25.2.dll
+	DevExpress.Drawing.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Drawing.v25.2.dll
+	DevExpress.ExpressApp.ConditionalAppearance.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Offline Packages\devexpress.expressapp.conditionalappearance\25.2.3\lib\net8.0\DevExpress.ExpressApp.ConditionalAppearance.v25.2.dll
+	DevExpress.ExpressApp.Design.ModelEditor.Protocol.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Design.ModelEditor.Protocol.v25.2.dll
+	DevExpress.ExpressApp.Design.ModelEditorServer.NetCore.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Design.ModelEditorServer.NetCore.v25.2.dll
+	DevExpress.ExpressApp.Security.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Security.v25.2.dll
+	DevExpress.ExpressApp.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.v25.2.dll
+	DevExpress.ExpressApp.v25.2, Version=25.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Users\DELL\.nuget\packages\devexpress.expressapp\25.2.5\lib\net8.0\DevExpress.ExpressApp.v25.2.dll
+	DevExpress.ExpressApp.Validation.v25.2, Version=25.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Users\DELL\.nuget\packages\devexpress.expressapp.validation\25.2.5\lib\net8.0\DevExpress.ExpressApp.Validation.v25.2.dll
+	DevExpress.ExpressApp.Win.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.ExpressApp.Win.v25.2.dll
+	DevExpress.Persistent.Base.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Persistent.Base.v25.2.dll
+	DevExpress.Persistent.BaseImpl.EFCore.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Offline Packages\devexpress.persistent.baseimpl.efcore\25.2.3\lib\net8.0\DevExpress.Persistent.BaseImpl.EFCore.v25.2.dll
+	DevExpress.Utils.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\DevExpress.Utils.v25.2.dll
+	Microsoft.EntityFrameworkCore, Version=8.0.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, Location=C:\Users\DELL\.nuget\packages\microsoft.entityframeworkcore\8.0.18\lib\net8.0\Microsoft.EntityFrameworkCore.dll
+	Microsoft.VisualStudio.Threading, Version=17.13.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Microsoft.VisualStudio.Threading.dll
+	Microsoft.VisualStudio.Validation, Version=17.8.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Microsoft.VisualStudio.Validation.dll
+	Microsoft.Win32.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\Microsoft.Win32.Primitives.dll
+	Microsoft.Win32.Registry, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\Microsoft.Win32.Registry.dll
+	Microsoft.Win32.SystemEvents, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\Microsoft.Win32.SystemEvents.dll
+	Nerdbank.Streams, Version=2.12.0.0, Culture=neutral, PublicKeyToken=cac503e1823ce71c, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Nerdbank.Streams.dll
+	netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\netstandard.dll
+	Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\Newtonsoft.Json.dll
+	ProxyBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	rpcProxies_da4c84a0-7a70-42a6-b84f-c2adf510f261, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	StreamJsonRpc, Version=2.22.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files\DevExpress 25.2\Components\Tools\eXpressAppFrameworkNetCore\Model Editor\StreamJsonRpc.dll
+	System.Collections, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.dll
+	System.Collections.Concurrent, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.Concurrent.dll
+	System.Collections.Immutable, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.Immutable.dll
+	System.Collections.NonGeneric, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.NonGeneric.dll
+	System.Collections.Specialized, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Collections.Specialized.dll
+	System.ComponentModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.dll
+	System.ComponentModel.EventBasedAsync, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.EventBasedAsync.dll
+	System.ComponentModel.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.Primitives.dll
+	System.ComponentModel.TypeConverter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ComponentModel.TypeConverter.dll
+	System.Configuration.ConfigurationManager, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Configuration.ConfigurationManager.dll
+	System.Data.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Data.Common.dll
+	System.Diagnostics.DiagnosticSource, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.DiagnosticSource.dll
+	System.Diagnostics.Process, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.Process.dll
+	System.Diagnostics.StackTrace, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.StackTrace.dll
+	System.Diagnostics.TextWriterTraceListener, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.TextWriterTraceListener.dll
+	System.Diagnostics.TraceSource, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.TraceSource.dll
+	System.Diagnostics.Tracing, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Diagnostics.Tracing.dll
+	System.Drawing.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Drawing.Common.dll
+	System.Drawing.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Drawing.Primitives.dll
+	System.IO.Compression, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.IO.Compression.dll
+	System.IO.Pipelines, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.IO.Pipelines.dll
+	System.IO.Pipes, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.IO.Pipes.dll
+	System.Linq, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Linq.dll
+	System.Linq.Expressions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Linq.Expressions.dll
+	System.Memory, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Memory.dll
+	System.Net.Http, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.Http.dll
+	System.Net.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.Primitives.dll
+	System.Net.Security, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.Security.dll
+	System.Net.WebClient, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Net.WebClient.dll
+	System.Numerics.Vectors, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Numerics.Vectors.dll
+	System.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.ObjectModel.dll
+	System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Private.CoreLib.dll
+	System.Private.Uri, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Private.Uri.dll
+	System.Private.Windows.Core, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Private.Windows.Core.dll
+	System.Private.Windows.GdiPlus, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Private.Windows.GdiPlus.dll
+	System.Private.Xml, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Private.Xml.dll
+	System.Reflection.DispatchProxy, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.DispatchProxy.dll
+	System.Reflection.Emit, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Emit.dll
+	System.Reflection.Emit.ILGeneration, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Emit.ILGeneration.dll
+	System.Reflection.Emit.Lightweight, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Emit.Lightweight.dll
+	System.Reflection.Metadata, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Metadata.dll
+	System.Reflection.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Reflection.Primitives.dll
+	System.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.dll
+	System.Runtime.InteropServices, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.InteropServices.dll
+	System.Runtime.Loader, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Loader.dll
+	System.Runtime.Numerics, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Numerics.dll
+	System.Runtime.Serialization.Formatters, Version=8.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Serialization.Formatters.dll
+	System.Runtime.Serialization.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Runtime.Serialization.Primitives.dll
+	System.Security.AccessControl, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Security.AccessControl.dll
+	System.Security.Cryptography, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Security.Cryptography.dll
+	System.Security.Principal.Windows, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Security.Principal.Windows.dll
+	System.Text.Encoding.Extensions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Text.Encoding.Extensions.dll
+	System.Text.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Text.Json.dll
+	System.Text.RegularExpressions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Text.RegularExpressions.dll
+	System.Threading, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.dll
+	System.Threading.Overlapped, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.Overlapped.dll
+	System.Threading.Thread, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.Thread.dll
+	System.Threading.ThreadPool, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Threading.ThreadPool.dll
+	System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Web.dll
+	System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Windows.Forms.dll
+	System.Windows.Forms.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.WindowsDesktop.App\10.0.5\System.Windows.Forms.Primitives.dll
+	System.Xml.ReaderWriter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\10.0.5\System.Xml.ReaderWriter.dll
+	UniTaskFlow01.Module, Version=1.0.9576.18409, Culture=neutral, PublicKeyToken=null, Location=C:\Users\DELL\AppData\Local\Temp\XAF\k3400wiy.kxf\UniTaskFlow01.Module.dll
+================================================================================
+

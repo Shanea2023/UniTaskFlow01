@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="EasyTest" />
+    <BuildType Name="Release" />
+  </Configurations>
+  <Project Path="UniTaskFlow01/UniTaskFlow01.Blazor.Server/UniTaskFlow01.Blazor.Server.csproj" />
+  <Project Path="UniTaskFlow01/UniTaskFlow01.Module/UniTaskFlow01.Module.csproj" />
+</Solution>

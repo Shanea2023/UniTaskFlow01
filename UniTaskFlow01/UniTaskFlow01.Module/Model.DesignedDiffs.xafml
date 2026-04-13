@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="UniTaskFlow01">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="25.2.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users">
+      <Columns>
+        <ColumnInfo Id="ProfilePicture" Width="70" MaxLength="0" Index="0" PropertyEditorType="DevExpress.ExpressApp.Editors.DetailPropertyEditor" />
+        <ColumnInfo Id="UserName" Index="1" />
+        <ColumnInfo Id="Department" Index="2" />
+      </Columns>
+    </ListView>
+    <ListView Id="OfficeTask_ListView" Criteria="">
+      <Columns>
+        <ColumnInfo Id="DateCreated" Index="-1" />
+        <ColumnInfo Id="Department" Index="-1" />
+        <ColumnInfo Id="Project" Index="-1" />
+        <ColumnInfo Id="StartDate" Index="-1" />
+        <ColumnInfo Id="Status" GroupIndex="0" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>
